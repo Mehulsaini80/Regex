@@ -8,7 +8,7 @@ Write a program that takes a percentage (integer) as input and prints the corres
  < 60: Grade F
 '''
 
-per=85;
+per=int(input("Enter Percentage: "));
 
 if(per<=60):
     print("Grade F");
