@@ -7,7 +7,20 @@ if(m=="jannuary" or m=="march" or m=="may" or m=="july" or m=="agust" or m=="oct
     print("31 Days")
     
 elif(m=="februry"):
-    print("28 days")
+
+    year=int(input("Enter year: "));
+    
+    if(year%400!=0):
+        if(year%4==0 and year%100!=0):
+            print(year,"is a leap year");
+            print("Februry: 29 days")
+        else:
+            print(year,"is not a leap year");
+            print("28 days")
+    else:
+        print(year,"is not a leap year");
+        print("28 days")
+    
     
 else:
     print("30 days");
