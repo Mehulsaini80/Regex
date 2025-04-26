@@ -2,11 +2,11 @@
  triangle. A triangle is valid if the sum of any two sides is greater than the third side.
  Check conditions like a + b > c, b + c > a, and a + c > b'''
  
-a=1
-b=2
-c=3
+a=int(input("Enter side 1: "));
+b=int(input("Enter side 2: "));
+c=int(input("Enter side 3: "));
 
-if(a+b>c or b+c>a or a+c>b  ):
+if(a+b>c and b+c>a and a+c>b  ):
     print("Triangle")
 else:
     print("Not a Triangle")
